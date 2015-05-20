@@ -10,8 +10,7 @@ class Table {
       this.urc = urc;
     }
 
-
     public function contains(other: Point) : Bool {
-      return llc.le(other) && urc.ge(other);
+      return other.ge(llc) && other.le(urc);
     }
 }

@@ -22,4 +22,7 @@ class Point {
       return this.x <= other.x && this.y <= other.y;
     }
 
+    public function toString() {
+      return x + "," + y;
+    }
 }
